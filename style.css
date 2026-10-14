@@ -119,6 +119,7 @@ img { display: block; max-width: 100%; }
 .hero-sparkle { position: absolute; top: 34px; left: -26px;  width: 54px; height: 54px;  opacity: .8; pointer-events: none; z-index: 2; }
 .hero-image-frame {
   position: relative; z-index: 1;
+  height: 460px;
   border-radius: 42% 58% 56% 44% / 54% 46% 54% 46%;
   overflow: hidden; box-shadow: 0 40px 80px rgba(0,0,0,.45);
 }
@@ -174,7 +175,7 @@ img { display: block; max-width: 100%; }
 .works-viewport { overflow: hidden; flex: 1; }
 .works-track { display: flex; gap: 24px; }
 .works-card { width: 274px; flex: none; }
-.works-card-image { overflow: hidden; box-shadow: 0 10px 24px rgba(0,0,0,.07); transition: box-shadow var(--trans); }
+.works-card-image { height: 178px; overflow: hidden; box-shadow: 0 10px 24px rgba(0,0,0,.07); transition: box-shadow var(--trans); }
 .works-card:hover .works-card-image { box-shadow: 0 18px 38px rgba(0,0,0,.13); }
 .works-card:nth-child(1) .works-card-image { border-radius: 46% 54% 50% 50% / 56% 50% 50% 44%; }
 .works-card:nth-child(2) .works-card-image { border-radius: 52% 48% 56% 44% / 48% 56% 44% 52%; }
@@ -203,7 +204,7 @@ img { display: block; max-width: 100%; }
 .strengths-content { position: relative; z-index: 2; }
 .strengths-header { display: flex; align-items: flex-end; gap: 14px; margin-bottom: 36px; }
 .strengths-grid { display: grid; grid-template-columns: 280px 1fr; gap: 52px; align-items: center; }
-.strengths-image-wrap { border-radius: 50% 50% 52% 48% / 56% 52% 48% 44%; overflow: hidden; box-shadow: 0 24px 48px rgba(0,0,0,.12); }
+.strengths-image-wrap { height: 210px; border-radius: 50% 50% 52% 48% / 56% 52% 48% 44%; overflow: hidden; box-shadow: 0 24px 48px rgba(0,0,0,.12); }
 .strengths-cards { display: grid; grid-template-columns: repeat(3,1fr); }
 .strength-card { text-align: center; padding: 0 20px; }
 .strength-card + .strength-card { border-left: 1px solid var(--border); }
@@ -291,7 +292,7 @@ img { display: block; max-width: 100%; }
 }
 .cta-deco-1 { position: absolute; top: -40px; right: 120px; width: 160px; height: 160px; border-radius: 50%; background: rgba(255,255,255,.07); }
 .cta-deco-2 { position: absolute; bottom: -50px; right: -20px; width: 180px; height: 180px; border-radius: 50%; background: rgba(255,255,255,.06); }
-.cta-image-wrap { flex: none; border-radius: 50% 50% 48% 52% / 52% 48% 52% 48%; overflow: hidden; width: 150px; box-shadow: 0 14px 30px rgba(0,0,0,.22); }
+.cta-image-wrap { flex: none; height: 120px; border-radius: 50% 50% 48% 52% / 52% 48% 52% 48%; overflow: hidden; width: 150px; box-shadow: 0 14px 30px rgba(0,0,0,.22); }
 .cta-image-placeholder { background: rgba(255,255,255,.15); color: rgba(255,255,255,.6); }
 .cta-content { position: relative; }
 .cta-sub { font-size: 13px; color: #fff; font-weight: 400; margin-bottom: 10px; opacity: .85; letter-spacing: .3px; }
@@ -429,21 +430,21 @@ img { display: block; max-width: 100%; }
   }
   .hero-image-frame {
     border-radius: 0;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 4 / 5;
     width: 100%;
     box-shadow: none;
   }
   .hero-image-frame .image-placeholder { height: 100% !important; }
   .strengths-image-wrap {
+    width: 100%;
     border-radius: 0;
-    aspect-ratio: 16 / 9;
     max-width: none;
     margin-left: -20px;
     margin-right: -20px;
     box-shadow: none;
   }
   .strengths-image-wrap .image-placeholder { height: 100% !important; }
-  .works-card-image { aspect-ratio: 3 / 2; border-radius: 10px; }
+  .works-card-image { width: 100%; border-radius: 10px; }
   .works-card:nth-child(1) .works-card-image,
   .works-card:nth-child(2) .works-card-image,
   .works-card:nth-child(3) .works-card-image,
@@ -484,7 +485,7 @@ img { display: block; max-width: 100%; }
 
   /* Strengths */
   .strengths-inner { padding: 48px 20px; }
-  .strengths-grid { grid-template-columns: 1fr; gap: 32px; }
+  .strengths-grid { grid-template-columns: minmax(0,1fr); gap: 32px; }
   .strengths-image-wrap { max-width: none; margin: 0; }
   .strengths-cards { grid-template-columns: 1fr; }
   .strength-card + .strength-card { border-left: none; border-top: 1px solid var(--border); padding-top: 24px; margin-top: 8px; }
