@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>&amp;PLAY DESIGN STUDIO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700&family=Yellowtail&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrapper">
+
+  <!-- HEADER + HERO ZONE (dark canvas) -->
+  <div class="hero-zone">
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="logo">
+      <div class="logo-mark"><span class="amp">&amp;</span><span class="brand-name">PLAY</span></div>
+      <div class="logo-sub">DESIGN<br>STUDIO</div>
+    </div>
+    <nav class="site-nav">
+      <a href="#services" class="nav-link"><span class="nav-link-en">SERVICES</span><span class="nav-link-ja">サービス</span></a>
+      <a href="#works" class="nav-link"><span class="nav-link-en">WORKS</span><span class="nav-link-ja">制作実績</span></a>
+      <a href="#strengths" class="nav-link"><span class="nav-link-en">STRENGTHS</span><span class="nav-link-ja">私たちの強み</span></a>
+      <a href="#price" class="nav-link"><span class="nav-link-en">PRICE</span><span class="nav-link-ja">料金プラン</span></a>
+      <a href="#faq" class="nav-link"><span class="nav-link-en">FAQ</span><span class="nav-link-ja">よくある質問</span></a>
+    </nav>
+    <a href="#contact" class="btn-contact">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 3 L10.5 13.5"/><path d="M21 3 L14 21 L10.5 13.5 L3 10 Z"/></svg>
+      お問い合わせ
+    </a>
+    <button type="button" class="nav-hamburger" id="nav-hamburger" aria-label="メニューを開く" aria-expanded="false" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- MOBILE NAV OVERLAY -->
+  <div class="nav-overlay" id="nav-overlay" aria-hidden="true">
+    <div class="nav-overlay-header">
+      <div class="logo">
+        <div class="logo-mark"><span class="amp">&amp;</span><span class="brand-name">PLAY</span></div>
+        <div class="logo-sub">DESIGN<br>STUDIO</div>
+      </div>
+      <button type="button" class="nav-overlay-close" onclick="toggleMenu()" aria-label="メニューを閉じる">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 L6 18"/><path d="M6 6 L18 18"/></svg>
+      </button>
+    </div>
+    <nav class="nav-overlay-nav">
+      <a href="#services"  class="nav-overlay-link" onclick="toggleMenu()"><span class="nav-overlay-en">SERVICES</span><span class="nav-overlay-ja">サービス</span></a>
+      <a href="#works"     class="nav-overlay-link" onclick="toggleMenu()"><span class="nav-overlay-en">WORKS</span><span class="nav-overlay-ja">制作実績</span></a>
+      <a href="#strengths" class="nav-overlay-link" onclick="toggleMenu()"><span class="nav-overlay-en">STRENGTHS</span><span class="nav-overlay-ja">私たちの強み</span></a>
+      <a href="#price"     class="nav-overlay-link" onclick="toggleMenu()"><span class="nav-overlay-en">PRICE</span><span class="nav-overlay-ja">料金プラン</span></a>
+      <a href="#faq"       class="nav-overlay-link" onclick="toggleMenu()"><span class="nav-overlay-en">FAQ</span><span class="nav-overlay-ja">よくある質問</span></a>
+    </nav>
+    <a href="#contact" class="nav-overlay-cta" onclick="toggleMenu()">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 3 L10.5 13.5"/><path d="M21 3 L14 21 L10.5 13.5 L3 10 Z"/></svg>
+      お問い合わせ
+    </a>
+  </div>
+
+  <!-- HERO -->
+  <section class="section-hero">
+    <div class="hero-amp" aria-hidden="true">&amp;</div>
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="hero-tagline-wrap">
+          <span class="hero-tagline">デザインで、ビジネスをもっと羽ばたかせる。</span>
+          <div class="hero-tagline-line"></div>
+        </div>
+        <h1 class="hero-heading">
+          <span class="hero-h1-brand">BRAND.</span>
+          <span class="hero-h1-exp">EXPERIENCE.</span>
+          <span class="hero-h1-growth">GROWTH!</span>
+        </h1>
+        <p class="hero-body">ブランディングからUI/UXまで、<br>スタートアップの想いをカタチにし、<br>事業の成長をデザインします。</p>
+        <a href="#contact" class="btn-hero">
+          今すぐ相談する
+          <span class="btn-hero-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2F2E2B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12 L19 12"/><path d="M13 6 L19 12 L13 18"/></svg></span>
+        </a>
+        <div class="hero-deco-arrow">
+          <svg viewBox="0 0 80 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 20 Q30 4 60 24 L54 18 M60 24 L52 30" stroke="#EF8D6E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+      </div>
+
+      <div class="hero-image-col">
+        <div class="hero-dots">
+          <svg viewBox="0 0 80 40" fill="#EF8D6E"><circle cx="8" cy="8" r="4"/><circle cx="24" cy="8" r="4"/><circle cx="40" cy="8" r="4"/><circle cx="56" cy="8" r="4"/><circle cx="72" cy="8" r="4"/><circle cx="8" cy="24" r="4"/><circle cx="24" cy="24" r="4"/><circle cx="40" cy="24" r="4"/><circle cx="56" cy="24" r="4"/><circle cx="72" cy="24" r="4"/></svg>
+        </div>
+        <div class="hero-scribble">
+          <svg viewBox="0 0 80 30" fill="none"><path d="M4 20 Q20 4 40 16 Q60 28 76 10" stroke="#F2CE61" stroke-width="3" stroke-linecap="round"/></svg>
+        </div>
+        <div class="hero-sparkle">
+          <svg viewBox="0 0 36 36" fill="none"><path d="M18 4 L20 14 L30 12 L22 18 L30 24 L20 22 L18 32 L16 22 L6 24 L14 18 L6 12 L16 14 Z" fill="#F2CE61" opacity=".8"/></svg>
+        </div>
+        <div class="hero-image-frame">
+          <div class="image-placeholder" style="height:460px;">オフィス・チームの写真</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div><!-- /hero-zone -->
+
+  <!-- SERVICES -->
+  <section id="services" class="section-services">
+    <div class="section-header">
+      <h2 class="section-title">SERVICES</h2>
+      <span class="section-subtitle">サービス紹介</span>
+      <div class="sparkle-deco">
+        <svg viewBox="0 0 36 36" fill="none"><path d="M18 4 L20 14 L30 12 L22 18 L30 24 L20 22 L18 32 L16 22 L6 24 L14 18 L6 12 L16 14 Z" fill="#F2CE61" opacity=".8"/></svg>
+      </div>
+    </div>
+    <div class="services-grid">
+      <div class="services-deco-arrow-1">
+        <svg viewBox="0 0 60 30" fill="none"><path d="M4 15 Q20 4 50 15 L44 10 M50 15 L44 20" stroke="#4FA595" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div class="services-deco-arrow-2">
+        <svg viewBox="0 0 60 30" fill="none"><path d="M4 15 Q20 4 50 15 L44 10 M50 15 L44 20" stroke="#EF8D6E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+
+      <!-- BRANDING -->
+      <div class="service-card">
+        <div class="service-icon-wrap">
+          <div class="service-icon-bg service-icon-bg--branding"></div>
+          <svg class="service-icon" width="60" height="60" viewBox="0 0 48 48" fill="none" stroke="#3E948A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 41 L19 13"/><path d="M19 14 C25 10 29 17 35 13 L33 24 C27 28 23 21 17 24"/><path d="M10 41 L31 41"/><path d="M21 41 L25 34 L29 41"/></svg>
+        </div>
+        <h3 class="service-name">BRANDING</h3>
+        <div class="service-sub">ブランディング</div>
+        <p class="service-desc">ビジョンを言語化し、<br>ブランドの核をつくります。</p>
+      </div>
+
+      <!-- UI/UX DESIGN -->
+      <div class="service-card">
+        <div class="service-icon-wrap">
+          <div class="service-icon-bg service-icon-bg--uiux"></div>
+          <svg class="service-icon" width="56" height="56" viewBox="0 0 48 48" fill="none" stroke="#E07A5C" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><rect x="11" y="9" width="26" height="30" rx="3"/><path d="M11 16 L37 16"/><path d="M14.5 12.7 L14.6 12.7"/><rect x="14" y="20" width="9" height="8" rx="1"/><path d="M14 27 L17 23.5 L19.5 26"/><path d="M27 20.5 L34 20.5"/><path d="M27 24 L34 24"/><path d="M14 33 L34 33"/></svg>
+        </div>
+        <h3 class="service-name">UI/UX DESIGN</h3>
+        <div class="service-sub">UI/UXデザイン</div>
+        <p class="service-desc">ユーザー視点で、心地よい<br>体験を設計します。</p>
+      </div>
+
+      <!-- WEB DESIGN -->
+      <div class="service-card">
+        <div class="service-icon-wrap">
+          <div class="service-icon-bg service-icon-bg--web"></div>
+          <svg class="service-icon" width="58" height="58" viewBox="0 0 48 48" fill="none" stroke="#C99A2E" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><rect x="12" y="12" width="24" height="16" rx="2"/><path d="M8 34 L40 34 L37 28 L11 28 Z"/><path d="M18 17 L22 20.5 L18 24"/><path d="M25 23.5 L30 23.5"/></svg>
+        </div>
+        <h3 class="service-name">WEB DESIGN</h3>
+        <div class="service-sub">Webサイト制作</div>
+        <p class="service-desc">魅力を伝え、成果につながる<br>Webサイトをつくります。</p>
+      </div>
+
+      <!-- DESIGN SYSTEM -->
+      <div class="service-card">
+        <div class="service-icon-wrap">
+          <div class="service-icon-bg service-icon-bg--system"></div>
+          <svg class="service-icon" width="56" height="56" viewBox="0 0 48 48" fill="none" stroke="#6FAE55" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M11 37 L37 37"/><rect x="14" y="23" width="5.5" height="14"/><rect x="22.5" y="16" width="5.5" height="21"/><rect x="31" y="28" width="5.5" height="9"/><path d="M37 12 l1 -3 l1 3 l3 1 l-3 1 l-1 3 l-1 -3 l-3 -1 z"/></svg>
+        </div>
+        <h3 class="service-name">DESIGN SYSTEM</h3>
+        <div class="service-sub">デザインシステム構築</div>
+        <p class="service-desc">一貫性と柔軟性を両立する<br>仕組みを整えます。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORKS -->
+  <section id="works" class="section-works">
+    <div class="section-header">
+      <h2 class="section-title">WORKS</h2>
+      <span class="section-subtitle">制作実績</span>
+    </div>
+    <div class="works-slider">
+      <button id="btn-prev" onclick="prevWork()" class="works-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3D3A35" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6 L9 12 L15 18"/></svg></button>
+      <div id="works-viewport" class="works-viewport">
+        <div id="works-track" class="works-track">
+
+          <!-- Work 1 -->
+          <div class="works-card">
+            <div class="works-card-image">
+              <div class="image-placeholder" style="height:178px;">FinTechアプリ</div>
+            </div>
+            <div class="works-card-meta">
+              <span class="works-tag works-tag--uiux">UI/UX</span>
+              <h4 class="works-card-name">FinTechアプリ</h4>
+              <div class="works-card-type">UX設計 / UIデザイン</div>
+            </div>
+          </div>
+
+          <!-- Work 2 -->
+          <div class="works-card">
+            <div class="works-card-image">
+              <div class="image-placeholder" style="height:178px;">AURORA Skincare</div>
+            </div>
+            <div class="works-card-meta">
+              <span class="works-tag works-tag--branding">BRANDING</span>
+              <h4 class="works-card-name">AURORA Skincare</h4>
+              <div class="works-card-type">ブランド開発 / ロゴ / パッケージ</div>
+            </div>
+          </div>
+
+          <!-- Work 3 -->
+          <div class="works-card">
+            <div class="works-card-image">
+              <div class="image-placeholder" style="height:178px;">SaaSコーポレートサイト</div>
+            </div>
+            <div class="works-card-meta">
+              <span class="works-tag works-tag--web">WEB</span>
+              <h4 class="works-card-name">SaaSコーポレートサイト</h4>
+              <div class="works-card-type">Webデザイン / コーディング</div>
+            </div>
+          </div>
+
+          <!-- Work 4 -->
+          <div class="works-card">
+            <div class="works-card-image">
+              <div class="image-placeholder" style="height:178px;">Co:WORKS</div>
+            </div>
+            <div class="works-card-meta">
+              <span class="works-tag works-tag--branding">BRANDING</span>
+              <h4 class="works-card-name">Co:WORKS</h4>
+              <div class="works-card-type">ブランド開発 / 空間デザイン</div>
+            </div>
+          </div>
+
+          <!-- Work 5 -->
+          <div class="works-card">
+            <div class="works-card-image">
+              <div class="image-placeholder" style="height:178px;">予約管理ダッシュボード</div>
+            </div>
+            <div class="works-card-meta">
+              <span class="works-tag works-tag--uiux">UI/UX</span>
+              <h4 class="works-card-name">予約管理ダッシュボード</h4>
+              <div class="works-card-type">UX設計 / UIデザイン</div>
+            </div>
+          </div>
+
+          <!-- Work 6 -->
+          <div class="works-card">
+            <div class="works-card-image">
+              <div class="image-placeholder" style="height:178px;">採用ブランドサイト</div>
+            </div>
+            <div class="works-card-meta">
+              <span class="works-tag works-tag--web">WEB</span>
+              <h4 class="works-card-name">採用ブランドサイト</h4>
+              <div class="works-card-type">Webデザイン / 実装</div>
+            </div>
+          </div>
+
+          <!-- Work 7 -->
+          <div class="works-card">
+            <div class="works-card-image">
+              <div class="image-placeholder" style="height:178px;">Bloom Cafe</div>
+            </div>
+            <div class="works-card-meta">
+              <span class="works-tag works-tag--branding">BRANDING</span>
+              <h4 class="works-card-name">Bloom Cafe</h4>
+              <div class="works-card-type">ロゴ / メニュー / 店舗ツール</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <button id="btn-next" onclick="nextWork()" class="works-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3D3A35" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6 L15 12 L9 18"/></svg></button>
+    </div>
+    <div id="dots-container" class="works-dots"></div>
+  </section>
+
+  <!-- STRENGTHS -->
+  <section id="strengths" class="section-strengths">
+    <div class="strengths-inner">
+      <div class="strengths-bg"></div>
+      <div class="strengths-deco-rings">
+        <svg viewBox="0 0 90 50" fill="none"><circle cx="25" cy="25" r="22" stroke="#4FA595" stroke-width="2"/><circle cx="50" cy="25" r="22" stroke="#EF8D6E" stroke-width="2"/><circle cx="75" cy="25" r="22" stroke="#F2CE61" stroke-width="2"/></svg>
+      </div>
+      <div class="strengths-deco-dots">
+        <svg viewBox="0 0 70 50" fill="#4FA595"><circle cx="10" cy="10" r="4"/><circle cx="30" cy="10" r="4"/><circle cx="50" cy="10" r="4"/><circle cx="70" cy="10" r="4"/><circle cx="10" cy="30" r="4"/><circle cx="30" cy="30" r="4"/><circle cx="50" cy="30" r="4"/><circle cx="70" cy="30" r="4"/></svg>
+      </div>
+      <div class="strengths-content">
+        <div class="section-header strengths-header">
+          <h2 class="section-title">STRENGTHS</h2>
+          <span class="section-subtitle">私たちの強み</span>
+        </div>
+        <div class="strengths-grid">
+          <div class="strengths-image-wrap">
+            <div class="image-placeholder" style="height:210px;">チームの写真</div>
+          </div>
+          <div class="strengths-cards">
+            <div class="strength-card">
+              <div class="strength-icon strength-icon--green">
+                <svg width="32" height="32" viewBox="0 0 36 36" fill="none" stroke="#4FA595" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 29 C8 22 8 13.5 13 11.2 C16 9.7 18 12 18 14 C18 12 20 9.7 23 11.2 C28 13.5 28 22 18 29 Z"/></svg>
+              </div>
+              <h3 class="strength-name">伴走するパートナー</h3>
+              <p class="strength-desc">ビジネスの本質を理解し、<br>一緒に未来を創ります。</p>
+            </div>
+            <div class="strength-card">
+              <div class="strength-icon strength-icon--yellow">
+                <svg width="32" height="32" viewBox="0 0 36 36" fill="none" stroke="#D2A33A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 7 C12.5 7 9 11 9 15.5 C9 18.5 11 20.5 12.5 22.5 L12.5 25.5 L23.5 25.5 L23.5 22.5 C25 20.5 27 18.5 27 15.5 C27 11 23.5 7 18 7 Z"/><path d="M14 29 L22 29"/><path d="M15.5 32 L20.5 32"/></svg>
+              </div>
+              <h3 class="strength-name">戦略から実装まで一貫支援</h3>
+              <p class="strength-desc">上流から下流までを一貫して<br>サポートします。</p>
+            </div>
+            <div class="strength-card">
+              <div class="strength-icon strength-icon--coral">
+                <svg width="30" height="30" viewBox="0 0 36 36" fill="none" stroke="#E07A5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 C23 10.5 24.5 18 22.5 24 L13.5 24 C11.5 18 13 10.5 18 6 Z"/><circle cx="18" cy="15" r="2.3"/><path d="M13.5 24 L10.5 29.5 L14.5 27.5"/><path d="M22.5 24 L25.5 29.5 L21.5 27.5"/></svg>
+              </div>
+              <h3 class="strength-name">スタートアップに特化</h3>
+              <p class="strength-desc">スピード感と柔軟性を重視し、<br>成長を加速させます。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICE -->
+  <section id="price" class="section-price">
+    <div class="section-header">
+      <h2 class="section-title">PRICE</h2>
+      <span class="section-subtitle">料金プラン</span>
+      <div class="price-deco-arrow">
+        <svg viewBox="0 0 60 30" fill="none"><path d="M4 15 Q20 4 50 15 L44 10 M50 15 L44 20" stroke="#4FA595" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+    </div>
+    <div class="price-grid">
+
+      <!-- STARTER -->
+      <div class="price-card">
+        <div class="price-card-head">
+          <h3 class="price-card-name price-card-name--starter">STARTER</h3>
+          <div class="price-card-sub">スタータープラン</div>
+          <div class="price-card-amount">¥50万円〜</div>
+          <p class="price-card-desc">小規模なプロジェクトや
+MVPに最適なプラン</p>
+        </div>
+        <div class="price-divider"></div>
+        <div class="price-feature"><span class="price-check price-check--starter">✓</span>ブランド設計</div>
+        <div class="price-feature"><span class="price-check price-check--starter">✓</span>UI/UXデザイン</div>
+        <div class="price-feature"><span class="price-check price-check--starter">✓</span>Webデザイン（TOPページ）</div>
+        <button class="btn-price btn-price--starter">詳細を見る <span class="btn-arrow">→</span></button>
+      </div>
+
+      <!-- GROWTH (highlighted) -->
+      <div class="price-card price-card--featured">
+        <div class="price-badge">人気No.1</div>
+        <div class="price-card-head">
+          <h3 class="price-card-name price-card-name--growth">GROWTH</h3>
+          <div class="price-card-sub">グロースプラン</div>
+          <div class="price-card-amount">¥120万円〜</div>
+          <p class="price-card-desc">事業の成長を加速する
+スタンダードプラン</p>
+        </div>
+        <div class="price-divider"></div>
+        <div class="price-feature"><span class="price-check price-check--growth">✓</span>ブランド設計</div>
+        <div class="price-feature"><span class="price-check price-check--growth">✓</span>UI/UXデザイン</div>
+        <div class="price-feature"><span class="price-check price-check--growth">✓</span>Webサイト制作（下層ページ込み）</div>
+        <div class="price-feature"><span class="price-check price-check--growth">✓</span>デザインシステム構築</div>
+        <button class="btn-price btn-price--growth">詳細を見る <span class="btn-arrow">→</span></button>
+      </div>
+
+      <!-- ENTERPRISE -->
+      <div class="price-card">
+        <div class="price-card-head">
+          <h3 class="price-card-name price-card-name--enterprise">ENTERPRISE</h3>
+          <div class="price-card-sub">エンタープライズプラン</div>
+          <div class="price-card-amount">¥200万円〜</div>
+          <p class="price-card-desc">大規模プロジェクトや
+複雑な要件に対応</p>
+        </div>
+        <div class="price-divider"></div>
+        <div class="price-feature"><span class="price-check price-check--enterprise">✓</span>ブランド戦略策定</div>
+        <div class="price-feature"><span class="price-check price-check--enterprise">✓</span>UI/UXデザイン</div>
+        <div class="price-feature"><span class="price-check price-check--enterprise">✓</span>Webサイト制作</div>
+        <div class="price-feature"><span class="price-check price-check--enterprise">✓</span>デザインシステム構築・運用支援</div>
+        <button class="btn-price btn-price--enterprise">詳細を見る <span class="btn-arrow">→</span></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section-faq">
+    <div class="faq-inner">
+    <div class="section-header">
+      <h2 class="section-title">FAQ</h2>
+      <span class="section-subtitle">よくある質問</span>
+    </div>
+    <div class="faq-grid">
+
+      <!-- FAQ 1 (open by default) -->
+      <div onclick="toggleFaq(0)" class="faq-item">
+        <div class="faq-item-header">
+          <div class="faq-question"><span class="faq-q-mark">Q.</span>どのくらいの期間で完成しますか？</div>
+          <svg class="faq-chev" id="chev-0" style="flex:none;transform:rotate(180deg);" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#A8A398" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9 L12 15 L18 9"/></svg>
+        </div>
+        <div class="faq-answer" id="ans-0" style="max-height:150px;opacity:1;">
+          <div class="faq-answer-text"><span class="faq-a-mark">A.</span>プロジェクトの規模により異なりますが、通常1〜3ヶ月程度です。</div>
+        </div>
+      </div>
+
+      <!-- FAQ 2 -->
+      <div onclick="toggleFaq(1)" class="faq-item">
+        <div class="faq-item-header">
+          <div class="faq-question"><span class="faq-q-mark">Q.</span>相談や見積もりは無料ですか？</div>
+          <svg class="faq-chev" id="chev-1" style="flex:none;transform:rotate(0deg);" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#A8A398" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9 L12 15 L18 9"/></svg>
+        </div>
+        <div class="faq-answer" id="ans-1" style="max-height:0px;opacity:0;">
+          <div class="faq-answer-text"><span class="faq-a-mark">A.</span>はい、初回相談・お見積もりは無料です。お気軽にご連絡ください。</div>
+        </div>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div onclick="toggleFaq(2)" class="faq-item">
+        <div class="faq-item-header">
+          <div class="faq-question"><span class="faq-q-mark">Q.</span>どこまで対応してもらえますか？</div>
+          <svg class="faq-chev" id="chev-2" style="flex:none;transform:rotate(0deg);" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#A8A398" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9 L12 15 L18 9"/></svg>
+        </div>
+        <div class="faq-answer" id="ans-2" style="max-height:0px;opacity:0;">
+          <div class="faq-answer-text"><span class="faq-a-mark">A.</span>戦略設計からデザイン、実装、運用支援まで一貫して対応可能です。</div>
+        </div>
+      </div>
+
+      <!-- FAQ 4 -->
+      <div onclick="toggleFaq(3)" class="faq-item">
+        <div class="faq-item-header">
+          <div class="faq-question"><span class="faq-q-mark">Q.</span>地方や海外でも依頼できますか？</div>
+          <svg class="faq-chev" id="chev-3" style="flex:none;transform:rotate(0deg);" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#A8A398" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9 L12 15 L18 9"/></svg>
+        </div>
+        <div class="faq-answer" id="ans-3" style="max-height:0px;opacity:0;">
+          <div class="faq-answer-text"><span class="faq-a-mark">A.</span>はい、オンラインで全国・海外からのご依頼に対応しています。</div>
+        </div>
+      </div>
+
+    </div>
+    </div><!-- /faq-inner -->
+  </section>
+
+  <!-- FOOTER CTA -->
+  <section id="contact" class="section-contact">
+    <div class="cta-box">
+      <div class="cta-deco-1"></div>
+      <div class="cta-deco-2"></div>
+      <div class="cta-image-wrap">
+        <div class="image-placeholder cta-image-placeholder" style="width:150px;height:120px;">人物写真</div>
+      </div>
+      <div class="cta-content">
+        <div class="cta-sub">一緒に、ワクワクする未来をつくりましょう！</div>
+        <div class="cta-heading">LET'S DESIGN<br>YOUR <span class="cta-heading-accent">FUTURE!</span></div>
+      </div>
+      <div class="cta-action">
+        <a href="#contact" class="btn-cta">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2F2E2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 3 L10.5 13.5"/><path d="M21 3 L14 21 L10.5 13.5 L3 10 Z"/></svg>
+          今すぐお問い合わせ
+        </a>
+        <div class="cta-note">アイデア段階でもOK！お気軽にご相談ください。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <div class="footer-logo-mark"><span class="amp">&amp;</span><span class="brand-name">PLAY</span></div>
+        <div class="footer-logo-sub">DESIGN<br>STUDIO</div>
+      </div>
+      <nav class="footer-nav">
+        <a href="#services" class="footer-nav-link"><span class="footer-nav-en">SERVICES</span>サービス</a>
+        <a href="#works" class="footer-nav-link"><span class="footer-nav-en">WORKS</span>制作実績</a>
+        <a href="#strengths" class="footer-nav-link"><span class="footer-nav-en">STRENGTHS</span>私たちの強み</a>
+        <a href="#price" class="footer-nav-link"><span class="footer-nav-en">PRICE</span>料金プラン</a>
+        <a href="#faq" class="footer-nav-link"><span class="footer-nav-en">FAQ</span>よくある質問</a>
+        <a href="#" class="footer-nav-link"><span class="footer-nav-en">COMPANY</span>会社概要</a>
+        <a href="#" class="footer-nav-link"><span class="footer-nav-en">BLOG</span>ブログ</a>
+      </nav>
+      <div class="footer-social">
+        <a href="#" class="footer-social-link"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2F2E2B" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1.2" fill="#2F2E2B" stroke="none"/></svg></a>
+        <a href="#" class="footer-social-link"><svg width="20" height="20" viewBox="0 0 24 24" fill="#2F2E2B"><path d="M3 3 L9.9 12 L3.2 21 L5.6 21 L11 13.9 L16 21 L21 21 L13.8 11 L20.3 3 L17.9 3 L12.7 9.7 L8 3 Z"/></svg></a>
+        <a href="#" class="footer-social-link"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2F2E2B" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M14.5 9.2 C13 8 9.5 8.4 9.5 12 C9.5 15.6 13 16 14.5 14.8 L14.5 12 L12.4 12" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
